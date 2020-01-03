@@ -13,7 +13,8 @@ app.use('/js/lib',express.static(path.join(__dirname,'/node_modules/jquery/dist'
 app.use('/js/lib',express.static(path.join(__dirname,'/node_modules/bootstrap/dist/js')))
 app.use('/webfonts',express.static(path.join(__dirname,'/node_modules/@fortawesome/fontawesome-free/webfonts')))
 app.use('/favicon.ico',express.static(path.join(__dirname,'/public/images/favicon.ico')))
-
+app.use('/robots.txt',express.static(path.join(__dirname,'/public/txt/robots.txt')))
+app.use('/sitemap.xml',express.static(path.join(__dirname,'/public/xml/sitemap.xml')))
 app.get('/',(req,res)=>
 {
     return res.status(200).render('home',{

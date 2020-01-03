@@ -1,0 +1,3 @@
+Sitemap: https://www.saloras.gr/sitemap.xml
+User-agent: *
+Crawl-delay:1
