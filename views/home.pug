@@ -1,0 +1,48 @@
+doctype html
+html(lang="el")
+	head
+		meta(charset='utf-8')
+		title Saloras - Under Construction
+		meta(content='width=device-width, initial-scale=1', name='viewport')
+		link(href='css/style.css', rel='stylesheet', type='text/css')
+		link(href='/favicon.ico', rel='shortcut icon', type='image/x-icon')
+		link(href='/images/favicon.png', rel='apple-touch-icon')
+	body
+		.container.text-center
+			img.img-fluid(src="images/under-construction-1000x500.jpg")
+			h1.d-none Saloras Satellite Center
+
+		.container
+			h2.h1.mb-5.text-center Η σελίδα βρίσκετε υπό κατασκευή
+			p.text-center.lead
+				| Για πληροφορίες ή ερώτησης μπορείτε να μας καλέσετε στο 
+				a.text-dark(href='tel:+302810372800') 281 037 2800 
+				| ή ηλεκτρονικά στο 
+				a.text-dark(href='mailto:info@saloras.gr') info@saloras.gr
+			.text-center.m-5
+				img.img-fluid(src="images/logo-banner.svg")
+			p.p Είμαστε η πρώτη εταιρία που από την ίδρυση της ασχολήθηκε με τις δορυφορικές επικοινωνίες (Πρώτη δορυφορική λήψη στην ΚΡΗΤΗ την 30-06-85) και εφήρμοσε την παράλληλη διανομή τηλεοπτικών, μουσικών και πληροφοριακών (μέσω υπολογιστή) καναλιών, με πρώτη μεγάλη εγκατάσταση το 1989 στο CRETA PALACE της GRECOTEL στο ΡΕΘΥΜΝΟ.
+		script(src='js/lib/jquery.min.js', type='text/javascript')
+		script(src='/js/lib/bootstrap.min.js')
+		script(type='application/ld+json').
+			{
+				"@context": "http://schema.org",
+				"@type": "LocalBusiness",
+				"currenciesAccepted": "EUR",
+				"paymentAccepted":"Cash, Credit Card",
+				"address":
+				{
+					"@type":"PostalAddress",
+					"addressCountry":"GR",
+					"addressLocality":"Ηράκλειο Κρήτης",
+					"postalCode":"71304",
+					"streetAddress":"Στρυμώνος 11"
+				},
+				"email":"info@saloras.gr",
+				"telephone":"281 037 2800",
+				"description": "Είμαστε η πρώτη εταιρία που από την ίδρυση της ασχολήθηκε με τις δορυφορικές επικοινωνίες (Πρώτη δορυφορική λήψη στην ΚΡΗΤΗ την 30-06-85) εφήρμοσε την παράλληλη διανομή τηλεοπτικών, μουσικών και πληροφοριακών (μέσω υπολογιστή)  καναλιών, με πρώτη μεγάλη εγκατάσταση το 1989 στο CRETA PALACE της GRECOTEL στο ΡΕΘΥΜΝΟ.",
+				"name": "Saloras Satellite Center",
+				"openingHours": "Mo-Sa 09:00-21:00",
+				"priceRange":"$$$",
+				"image":"https://www.saloras.gr/images/logo-banner.svg"
+			}
