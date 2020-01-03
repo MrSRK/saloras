@@ -1,13 +1,10 @@
 const express=require('express')
 const pug=require('pug')
-
+const spdy = require('spdy')
 const path=require('path')
-
 const app=new express()
-
 app.set('views', path.join(__dirname, 'views'))
 	app.set('view engine','pug')
-
 app.use('/',express.static(path.join(__dirname,'/public')))
 app.use('/js/lib',express.static(path.join(__dirname,'/node_modules/jquery/dist')))
 app.use('/js/lib',express.static(path.join(__dirname,'/node_modules/bootstrap/dist/js')))
