@@ -1,32 +1,33 @@
 doctype html
 html(lang="el")
 	head
-		meta(charset='utf-8')
+		meta(charset="utf-8")
 		title Saloras - Under Construction
-		meta(content='width=device-width, initial-scale=1', name='viewport')
-		link(href='/css/style.css', rel='stylesheet', type='text/css')
-		link(href='/favicon.ico', rel='shortcut icon', type='image/x-icon')
-		link(href='/images/favicon.png', rel='apple-touch-icon')
+		meta(content="width=device-width, initial-scale=1", name="viewport")
+		link(href="/css/style.css", rel="stylesheet", type="text/css")
+		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
+		link(href="/images/favicon.png", rel="apple-touch-icon")
 	body
 		.container.text-center
-			img.img-fluid(src="images/under-construction-1000x500.jpg")
+			picture
+				source(srcset="images/under-construction-1000x500.webp",type="image/webp")
+				img.img-fluid(src="images/under-construction-1000x500.jpg",alt="Page Under Construction")
 			h1.d-none Saloras Satellite Center
-
 		.container
 			h2.h1.mb-5.text-center Η σελίδα βρίσκετε υπό κατασκευή
 			p.text-center.lead
 				| Για πληροφορίες ή ερώτησης μπορείτε να μας καλέσετε στο 
-				a.text-dark(href='tel:+302810372800') 281 037 2800 
+				a.text-dark(href="tel:+302810372800") 281 037 2800 
 				| ή ηλεκτρονικά στο 
-				a.text-dark(href='mailto:info@saloras.gr') info@saloras.gr
+				a.text-dark(href="mailto:info@saloras.gr") info@saloras.gr
 			.text-center.m-5
-				img.img-fluid(src="images/logo-banner.svg")
+				img.img-fluid(src="images/logo-banner.svg",alt="Saloras Satellite Center")
 			p.p Είμαστε η πρώτη εταιρία που από την ίδρυση της ασχολήθηκε με τις δορυφορικές επικοινωνίες (Πρώτη δορυφορική λήψη στην ΚΡΗΤΗ την 30-06-85) και εφήρμοσε την παράλληλη διανομή τηλεοπτικών, μουσικών και πληροφοριακών (μέσω υπολογιστή) καναλιών, με πρώτη μεγάλη εγκατάσταση το 1989 στο CRETA PALACE της GRECOTEL στο ΡΕΘΥΜΝΟ.
-		script(src='/js/lib/jquery.min.js', type='text/javascript')
-		script(src='/js/lib/bootstrap.min.js')
-		script(type='application/ld+json').
+		script(async,src="/js/lib/jquery.min.js", type="text/javascript")
+		script(async,src="/js/lib/bootstrap.min.js")
+		script(type="application/ld+json").
 			{
-				"@context": "http://schema.org",
+				"@context": "https://schema.org",
 				"@type": "LocalBusiness",
 				"currenciesAccepted": "EUR",
 				"paymentAccepted":"Cash, Credit Card",
