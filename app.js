@@ -22,7 +22,7 @@ app.get('/',(req,res)=>
 app.all('*',(req,res)=>
 {
     //redirect to hame page
-    res.status(404).send('asdasd')
+    res.writeHead(302,{'Location':'https://www.saloras.gr'})
+    res.end();
 })
-
 app.listen(80)
