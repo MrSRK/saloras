@@ -1,6 +1,5 @@
 const express=require('express')
 const pug=require('pug')
-const spdy = require('spdy')
 const path=require('path')
 const app=new express()
 app.set('views', path.join(__dirname, 'views'))
